@@ -16,14 +16,14 @@ package test
 
 import (
 	"encoding/json"
-	"github.com/flashmob/go-guerrilla/mail/rfc5321"
+	"github.com/tdickportrix/go-guerrilla/mail/rfc5321"
 	"testing"
 
 	"time"
 
-	"github.com/flashmob/go-guerrilla"
-	"github.com/flashmob/go-guerrilla/backends"
-	"github.com/flashmob/go-guerrilla/log"
+	"github.com/tdickportrix/go-guerrilla"
+	"github.com/tdickportrix/go-guerrilla/backends"
+	"github.com/tdickportrix/go-guerrilla/log"
 
 	"bufio"
 
@@ -36,7 +36,7 @@ import (
 
 	"os"
 
-	"github.com/flashmob/go-guerrilla/tests/testcert"
+	"github.com/tdickportrix/go-guerrilla/tests/testcert"
 )
 
 type TestConfig struct {
