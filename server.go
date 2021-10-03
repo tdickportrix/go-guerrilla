@@ -377,7 +377,7 @@ func (s *server) handleClient(client *client) {
 
 	// Extended feature advertisements
 	messageSize := fmt.Sprintf("250-SIZE %d\r\n", sc.MaxSize)
-	pipelining := "250-PIPELINING\r\n"
+	//pipelining := "250-PIPELINING\r\n"
 	advertiseTLS := "250-STARTTLS\r\n"
 	advertiseEnhancedStatusCodes := "250-ENHANCEDSTATUSCODES\r\n"
 	// The last line doesn't need \r\n since string will be printed as a new line.
@@ -460,7 +460,7 @@ func (s *server) handleClient(client *client) {
 				client.resetTransaction()
 				client.sendResponse(ehlo,
 					messageSize,
-					pipelining,
+					//pipelining,
 					advertiseTLS,
 					advertiseEnhancedStatusCodes,
 					help)
